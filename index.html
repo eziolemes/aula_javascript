@@ -3,11 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>Minha página</title>
-	<script type="text/javascript" src="js/main.js"></script>
+	<!--<script type="text/javascript" src="js/main.js"></script> -->
+	<script type="text/javascript" src="js/aula2.js"></script>
 </head>
-<body>
-
-	
+<body onload="load()">
 	<h1>Minha página</h1>
+
+	<button type="button" onclick="clicou()">Clique aqui</button>
+	<p id="agradecimento" onclick="redirecionar()"></p>
+	<p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+	<p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+
+	<select onchange="funcaoChange(this)">
+		<option>Valor 1</option>
+		<option>Valor 2</option>
+		<option>Valor 3</option>
+	</select>
 </body>
 </html>
